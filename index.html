@@ -286,6 +286,10 @@ html {
         <button onclick="fkurang(this)" class="btn third" >Kurang</button>
 
         <button onclick="ftambah(this)" class="btn third" > Tambah</button>
+
+        <button onclick="fbagi(this)" class="btn third" >bagi</button>
+
+        <button onclick="fkali(this)" class="btn third" > kali</button>
   </div>
 
   <div class="col-3 right">
@@ -310,6 +314,14 @@ html {
         
             function fkurang(){
               number.innerHTML = Number(inputSatu.value) - Number(inputDua.value)
+            }
+
+            function fbagi(){
+              number.innerHTML = Number(inputSatu.value) / Number(inputDua.value)
+            }
+        
+            function fkali(){
+              number.innerHTML = Number(inputSatu.value) * Number(inputDua.value)
             }
         
          
